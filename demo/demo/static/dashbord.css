@@ -1,0 +1,83 @@
+body {
+    background-color: #f3f0ff;
+    color: #4b0082;
+}
+
+.header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    color: white; /* Set icon color to white */
+    text-decoration: none; /* Remove default underline */
+}
+
+.header-icons i {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-icons i:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.header .login-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.analytics-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#map {
+    height: 400px;
+    border-radius: 8px;
+}
+
+.download-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #6a0dad;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

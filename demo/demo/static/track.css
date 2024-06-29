@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #a82d9e; /* Odoo's purple color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #a82d9e; /* Odoo's purple color */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a82d9e; /* Darker shade of purple */
+}
+
+.btn-primary:active, .btn-primary:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.animated-stages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stage {
+    padding: 10px;
+    border: 2px solid #a82d9e; /* Odoo's purple color */
+    border-radius: 5px;
+    text-align: center;
+    width: 18%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.stage:hover {
+    background-color: #512DA8; /* Odoo's purple color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+}
+
+.line {
+    flex-grow: 1;
+    border-bottom: 2px dotted #512DA8; /* Odoo's purple color */
+    margin: 0 10px;
+}

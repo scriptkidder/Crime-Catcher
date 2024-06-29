@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #512DA8; /* Odoo's purple color */
+    color: #fff; /* White text color */
+}
+
+.header {
+    background-color: #512DA8; /* Odoo's purple color */
+    color: #fff; /* White text color */
+    padding: 15px 20px; /* Increased padding for better spacing */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px; /* Increased font size for the title */
+    font-weight: bold; /* Bold font weight */
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Adjusted margin for better spacing */
+}
+
+.header-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px; /* Increased font size for better readability */
+    transition: all 0.3s ease;
+    margin: 0 15px; /* Increased margin for better spacing */
+}
+
+.header-icons a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    height: 500px; /* Adjust height as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Add margin for separation */
+}
+
+.analytics-container,
+.updates-container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 500px; /* Equal height for both containers */
+    overflow-y: auto; /* Use auto for scrollbar only when needed */
+}
+
+.update-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #F0F0F0; /* Light gray background for updates */
+    border-radius: 5px;
+    animation: slide-in-up 0.3s ease-in-out;
+}
+
+.you-are-here {
+    position: absolute;
+    top: 50px; /* Adjust position as needed */
+    left: 50px; /* Adjust position as needed */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000; /* Ensure it's above map layers */
+    display: none; /* Initially hide */
+}
+
+.you-are-here.show {
+    display: block;
+    animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

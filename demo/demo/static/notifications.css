@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #8b1f85; /* Purple header */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.notification {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.notification h2 {
+    color: #9f0e95; /* Purple title */
+    margin-bottom: 5px;
+}
+
+.notification p {
+    margin: 5px 0;
+}
+
+.emergency {
+    color: red;
+    font-weight: bold;
+}
+
+.status-change {
+    color: green;
+    font-weight: bold;
+}

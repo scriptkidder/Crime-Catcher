@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c311d0;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(110, 5, 110); /* Set background color for profile header */
+    color: white; /* Set text color for profile header */
+    padding: 10px; /* Add padding to profile header */
+    border-radius: 5px; /* Optional: Add border radius */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: purple; /* Keep card header background purple */
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.police-station-icon {
+    color: purple;
+    font-size: 64px;
+    margin-right: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Profile - Crime Reporting System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="static/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <!-- Font Awesome gender icons -->
+                        <i class="fas fa-male gender-icon"></i> <!-- For male -->
+                        <!-- <i class="fas fa-female gender-icon"></i> --> <!-- For female -->
+                        <h2 class="card-title">User Profile</h2>
+                        <p class="card-text"><strong>Name:</strong> John Doe</p>
+                        <p class="card-text"><strong>Email:</strong> john@gmail.com</p>
+                        <!-- Add other profile details here -->
+
+                        <!-- My Complaints Section -->
+                        <div class="complaints-section">
+                            <h3>My Complaints</h3>
+                            <!-- Example complaint items -->
+                            <div class="complaint-item">
+                                <div class="complaint-title">Pocket Picking Incident</div>
+                                <div class="complaint-details">Status: Investigating</div>
+                            </div>
+                            <div class="complaint-item">
+                                <div class="complaint-title">Fraudulent Activity</div>
+                                <div class="complaint-details">Status: Resolved</div>
+                            </div>
+                            <!-- Add more complaint items dynamically -->
+                        </div>
+
+                        <button class="btn btn-danger mb-3" id="dangerButton">I'm in Danger</button>
+                        <button class="btn btn-primary" id="findPoliceStation">Find Nearest Police Station</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/all.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

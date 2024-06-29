@@ -1,0 +1,93 @@
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White card background */
+    max-width: 400px; /* Limiting card width */
+    margin: 0 auto; /* Center aligning card */
+}
+
+.card-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    fill: #dc3545; /* Customize the SVG fill color */
+}
+
+.btn-danger, .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red danger button */
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue primary button */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.complaints-section {
+    margin-top: 30px;
+}
+
+.complaint-item {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.complaint-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.complaint-details {
+    font-size: 16px;
+    color: #6c757d; /* Gray for details */
+}
+
+.gender-icon {
+    font-size: 80px; /* Increased size to 80px */
+    color: #007bff; /* Blue color for icon */
+    margin-bottom: 20px;
+}

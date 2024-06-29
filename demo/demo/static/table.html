@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints Table</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="purple-header">Complaints Table</h1>
+        
+        <!-- Table Wrapper -->
+        <div class="table-wrapper">
+            <!-- Filter Input -->
+            <input type="text" id="filterInput" class="filter-input form-control mb-3" placeholder="Filter by name...">
+            
+            <table id="complaints-table" class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Complaint ID</th>
+                        <th>Type of Crime</th>
+                        <th>Status</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Remarks</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>1234567890</td>
+                        <td>johndoe@example.com</td>
+                        <td>CR12345</td>
+                        <td>Theft</td>
+                        <td contenteditable="true" class="editable">Under Review</td>
+                        <td>Central Park</td>
+                        <td>Stolen bike from parking lot.</td>
+                        <td contenteditable="true" class="editable">Pending investigation.</td>
+                        <td><button class="btn btn-primary">Save</button> <button class="btn btn-secondary">Edit</button></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>9876543210</td>
+                        <td>janesmith@example.com</td>
+                        <td>CR56789</td>
+                        <td>Vandalism</td>
+                        <td contenteditable="true" class="editable">In Progress</td>
+                        <td>Main Street</td>
+                        <td>Public property damaged by graffiti.</td>
+                        <td contenteditable="true" class="editable">Awaiting witness statement.</td>
+                        <td><button class="btn btn-primary">Save</button> <button class="btn btn-secondary">Edit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Download Button -->
+        <button class="btn btn-success mt-3" onclick="downloadTable()">Download Table</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="table.js"></script>
+</body>
+</html>

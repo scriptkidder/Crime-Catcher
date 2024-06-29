@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Reporting System</title>
+    <!-- Leaflet CSS for map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Crime Reporting System</h1>
+
+        <!-- Header Icons -->
+        <div class="header-icons">
+            <!-- Left Section -->
+            <div>
+                <a href="static\report_crime.html"><i class="fas fa-bullhorn"></i> Report a Crime</a>
+                <a href="static\track.html"><i class="fas fa-clipboard-list"></i> Track Complaints</a>
+                <a href="static\reports.html"><i class="fas fa-search"></i> View Crime Reports</a>
+            </div>
+
+            <!-- Right Section -->
+            <div>
+                <a href="static\notification.html"><i class="fas fa-bell"></i> Notifications</a>
+                <a href="static\profile.html"><i class="fas fa-user"></i> Profile</a>
+                <button class="login-btn btn btn-danger">Login</button> <!-- Login button -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- You Are Here Indicator -->
+    <div class="you-are-here" id="you-are-here">
+        <i class="fas fa-map-marker-alt"></i> You Are Here
+    </div>
+
+    <!-- Analytics and Live Updates Section -->
+    <div class="container">
+        <div class="row">
+            <!-- Crime Analytics Section -->
+            <div class="col-md-6">
+                <div class="analytics-container">
+                    <h2>Crime Analytics</h2>
+                    <canvas id="crime-analytics-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Live Updates Section -->
+            <div class="col-md-6">
+                <div class="updates-container">
+                    <h2>Live Updates</h2>
+                    <div id="live-updates-list">
+                        <!-- Updates will be populated dynamically by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>

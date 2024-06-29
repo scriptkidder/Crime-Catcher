@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Complaint</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Track Complaint</h1>
+        <form id="statusForm" method="post">
+           
+            <div class="form-group">
+                <label for="complaintId">Enter Complaint ID:</label>
+                <input type="text" class="form-control" id="complaintId" name="complaintId" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Track Status</button>
+        </form>
+
+       
+        <div id="stages" class="animated-stages">
+            <div class="stage received">Received</div>
+            <div class="line"></div>
+            <div class="stage under-review">Under Review</div>
+            <div class="line"></div>
+            <div class="stage in-progress">In Progress</div>
+            <div class="line"></div>
+            <div class="stage resolved">Resolved</div>
+            <div class="line"></div>
+            <div class="stage closed">Closed</div>
+        </div>
+
+        
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Email</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(to bottom right, #ff9933, #ffffff, #138808);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .otp-box {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+
+        p {
+            color: #666666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        strong {
+            color: #0d0acc;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your OTP for Signup</h1>
+        <div class="otp-box">
+            <p>Your OTP is: <strong>{{ otp }}</strong></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This is an automated email. Please do not reply.</p>
+    </div>
+</body>
+
+</html>
